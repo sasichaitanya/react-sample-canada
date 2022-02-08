@@ -5,7 +5,8 @@ class ClassComponet extends React.Component {
         super(props)
 
         this.state = {
-            stateVariable: 'helloooo'
+            stateVariable: 'helloooo',
+            count: 1
         }
     }
 
@@ -20,6 +21,25 @@ class ClassComponet extends React.Component {
         console.log('============', this.state.stateVariable)
     }
 
+    increment() {
+        // this.setState({
+        //     count : this.state.count + 1
+        // })
+
+        this.setState((prevState, props) => ({
+            count: prevState.count + 1
+        }))
+    }
+
+    bulkIncrement() {
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+    }
+
     render() {
         return (
             <div>
@@ -27,6 +47,9 @@ class ClassComponet extends React.Component {
                 <div>i am {this.props.name} from {this.props.location}</div>
                 <br />
                 <button onClick={() => this.changeMessage()}>Change Message</button>
+                <br />
+                <br />
+                <button onClick={() => this.bulkIncrement()}>Count {this.state.count}</button>
             </div>
         );
     }
