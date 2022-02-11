@@ -6,6 +6,9 @@ import ParentCompoent from './components/ParentCompoent';
 import ConditionalRendering from './components/ConditionalRendering';
 import LoopingComponent from './components/LoopingComponent';
 import FormHandling from './FormHandling';
+import LifeCycleMethodsA from './components/LifeCycleMethodsA';
+import Fragments from './components/Fragments';
+import PureComponetParent from './components/PureComponetParent';
 
 function App() {
   return (
@@ -17,8 +20,11 @@ function App() {
       <ClassComponet name="Class component" location="canada" />
       <ParentCompoent/>
       <ConditionalRendering/>
-      <LoopingComponent/> */}
+      <LoopingComponent/>
       <FormHandling/>
+      <LifeCycleMethodsA/>
+      <Fragments/> */}
+      <PureComponetParent/>
     </div>
   );
 }
