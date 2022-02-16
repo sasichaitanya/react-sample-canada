@@ -6,6 +6,8 @@ import ParentCompoent from './components/ParentCompoent';
 import ConditionalRendering from './components/ConditionalRendering';
 import LoopingComponent from './components/LoopingComponent';
 import FormHandling from './FormHandling';
+import BootStrap from './components/BootStrap.js'
+import Css from './components/Css.js'
 
 function App() {
   return (
@@ -17,8 +19,9 @@ function App() {
       <ClassComponet name="Class component" location="canada" />
       <ParentCompoent/>
       <ConditionalRendering/>
-      <LoopingComponent/> */}
-      <FormHandling/>
+      <LoopingComponent/> 
+      <FormHandling/> */}
+      <BootStrap/>
     </div>
   );
 }
