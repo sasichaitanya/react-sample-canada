@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import PureComponentDemo from './PureComponentDemo';
+import MemoComponent from './MemoComponent';
 
 class PureComponetParent extends Component {
     constructor(props) {
@@ -23,7 +24,8 @@ class PureComponetParent extends Component {
         return (
             <Fragment>
                 <div>PureComponetParent</div>
-                <PureComponentDemo name={this.state.name} />
+                {/* <PureComponentDemo name={this.state.name} /> */}
+                <MemoComponent name={this.state.name}/>
             </Fragment>
         )
     }

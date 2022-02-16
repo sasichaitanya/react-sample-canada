@@ -9,6 +9,11 @@ import FormHandling from './FormHandling';
 import LifeCycleMethodsA from './components/LifeCycleMethodsA';
 import Fragments from './components/Fragments';
 import PureComponetParent from './components/PureComponetParent';
+import RefDemo from './components/RefDemo';
+import ClassRefComponentParent from './components/ClassRefComponentParent';
+import PortalDemo from './components/PortalDemo';
+import ComponentForErrorCheck from './components/ComponentForErrorCheck';
+import ErrorBoundry from './components/ErrorBoundry';
 
 function App() {
   return (
@@ -23,8 +28,17 @@ function App() {
       <LoopingComponent/>
       <FormHandling/>
       <LifeCycleMethodsA/>
-      <Fragments/> */}
+      <Fragments/>
       <PureComponetParent/>
+      <RefDemo/>
+      <ClassRefComponentParent/>
+      <PortalDemo/> */}
+      <ErrorBoundry>
+        <ComponentForErrorCheck name="hellooo" />
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <ComponentForErrorCheck name="wrong" />
+      </ErrorBoundry>
     </div>
   );
 }

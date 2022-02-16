@@ -15,6 +15,7 @@ class LifeCycleMethodsA extends Component {
     // rarely used method
     static getDerivedStateFromProps(props, state) {
         // no access to this keyword
+        // it will return updated state / null
         console.log('i am in getDerivedStateFromProps LifeCycleMethodsA')
         return null;
     }
