@@ -14,6 +14,10 @@ import ClassRefComponentParent from './components/ClassRefComponentParent';
 import PortalDemo from './components/PortalDemo';
 import ComponentForErrorCheck from './components/ComponentForErrorCheck';
 import ErrorBoundry from './components/ErrorBoundry';
+import HocClickSample from './components/HocClickSample';
+import HocHoverSample from './components/HocHoverSample';
+import HttpGetSample from './components/HttpGetSample';
+import HttpSamplePost from './components/HttpSamplePost';
 
 function App() {
   return (
@@ -33,12 +37,19 @@ function App() {
       <RefDemo/>
       <ClassRefComponentParent/>
       <PortalDemo/> */}
-      <ErrorBoundry>
+
+      {/* <ErrorBoundry>
         <ComponentForErrorCheck name="hellooo" />
       </ErrorBoundry>
       <ErrorBoundry>
         <ComponentForErrorCheck name="wrong" />
-      </ErrorBoundry>
+      </ErrorBoundry> */}
+
+      {/* <HocClickSample name="Click me"/>
+      <HocHoverSample name="Hover me"/> */}
+
+      {/* <HttpGetSample/> */}
+      <HttpSamplePost/>
     </div>
   );
 }
