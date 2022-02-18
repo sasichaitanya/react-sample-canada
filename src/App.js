@@ -18,8 +18,15 @@ import HocClickSample from './components/HocClickSample';
 import HocHoverSample from './components/HocHoverSample';
 import HttpGetSample from './components/HttpGetSample';
 import HttpSamplePost from './components/HttpSamplePost';
+import ContextApiA from './components/ContextApiA';
+// context api
+import { UserProvider } from './components/ContextApiDemo';
 
 function App() {
+  let userDetails = {
+    name: 'heloo',
+    age: 20
+  }
   return (
     <div>
       {/* <Functional name="Funational component" location="hyd">
@@ -48,8 +55,12 @@ function App() {
       {/* <HocClickSample name="Click me"/>
       <HocHoverSample name="Hover me"/> */}
 
-      {/* <HttpGetSample/> */}
-      <HttpSamplePost/>
+      {/* <HttpGetSample/>
+      <HttpSamplePost/> */}
+      {/* Providing context here */}
+      <UserProvider value={userDetails}>
+        <ContextApiA />
+      </UserProvider>
     </div>
   );
 }
